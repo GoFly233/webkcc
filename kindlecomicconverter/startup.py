@@ -54,3 +54,9 @@ def startC2P():
     from .comic2panel import main
     print('comic2panel v' + __version__ + ' - Written by Ciro Mattia Gonano and Pawel Jastrzebski.')
     sys.exit(main(sys.argv[1:]))
+
+
+def startWeb():
+    dependencyCheck(2)
+    # from .comic2panel import main
+    sys.exit(main(sys.argv[1:]))
